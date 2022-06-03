@@ -1,10 +1,11 @@
+/* the page general setting*/
 * {
     box-sizing: border-box;
 }
 body {
     margin:0;
 }
-
+/*header area*/
 h1 {
     margin: 0;
     padding: 35px;
@@ -24,4 +25,17 @@ h1,
 .top-info h2 {
     margin-bottom: 0;
 }
-
+/*the form*/
+legend {
+    font-size: x-large;
+    font-weight: bold;
+}
+fieldset {
+    border: none;
+}
+input {
+    border:none;
+    padding: 15px;
+    border-radius: 5%; /*need to review*/
+    background-color: lightgray;
+}
