@@ -59,10 +59,15 @@ button {
     margin: 10px 14px;
     border-radius: 5px;
 }
-.text_area,
+.text_area {
+    margin: 15px;
+}
 input[type="checkbox"],
-input[type="radio"]{
-    margin: 0 14px;
+input[type="radio"],
+.letter_type,
+.letter_format,
+.newsletter{
+    margin: 7px 14px;
 }
 footer{
     text-align: center;
