@@ -9,7 +9,7 @@ body {
 h1 {
     margin: 0;
     padding: 35px;
-    background-color: darkblue;
+    background-color: #2d3945;
     color:white;
     text-transform: uppercase;
 }
@@ -20,17 +20,21 @@ h1,
 }
 
 .top-info {
-    border-bottom: solid 5px;
+    border-bottom: solid 5px #2d3945;
     margin: 0 25px;
 }
 .top-info h2 {
     margin-bottom: 0;
 }
+.top-info h2 {
+    color: #2d3945;
+}
 /*the form*/
 legend {
-    font-size: 500;
+    font-size: 700;
     font-weight: bold;
 }
+
 fieldset {
     border: none;
 }
@@ -39,18 +43,21 @@ input {
     margin: 10px 0;
     padding: 15px 90px;
     border-radius: 5px;
-    background-color: lightgray;
+    background-color: #eff0f1;
 }
 textarea {
-    background-color: lightgray;
+    background-color: #eff0f1;
     border:none;
     margin: 10px 15px;
     padding: 80px;
     border-radius: 5px;
 }
+input:focus {
+    border: #46698b solid;
+}
 button {
     border: none;
-    background-color: aquamarine;
+    background-color: #4ebbb5;
     color: white;
     text-align: center;
     font-size: x-large;
@@ -65,9 +72,14 @@ button {
 input[type="checkbox"],
 input[type="radio"],
 .letter_type,
-.letter_format,
-.newsletter{
+.letter_format{
     margin: 7px 14px;
+}
+.newsletter{
+    margin: 0 14px;
+    border-top: solid 3px;
+    border-color: #2d3945;
+    padding:20px 0;
 }
 footer{
     text-align: center;
