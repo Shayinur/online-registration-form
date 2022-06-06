@@ -24,23 +24,24 @@
                 <fieldset>
                     <legend class="contact">Contact Information </legend>
                         <label for="name">Full Name</label><br>
-                        <input type="text" id="name" name="user_name" placeholder="Required"><br>
+                        <input type="text" id="name" name="user_name" placeholder="Required" required><br>
                         
                         <label for="email">Email Address</label><br>
-                        <input type="text" id="email" name="user_email" placeholder="Required"><br>
+                        <input type="text" id="email" name="user_email" placeholder="Required" required><br>
 
                         <label for="phone">Phone Number</label><br>
-                        <input type="text" id="phone" name="user_phone"><br>
+                        <input type="text" id="phone" name="user_phone" placeholder="Optional"><br>
 
                         <label for="address">Street Address</label><br>
-                        <input type="text" id="address" name="user_address"><br>
+                        <input type="text" id="address" name="user_address" placeholder="Required" required><br>
 
                         <label for="city">City</label><br>
-                        <input type="text" id="city" name="user_city"><br>
+                        <input type="text" id="city" name="Please type your city name" placeholder="Required" required><br>
 
                         <label for="state">State</label><br>
-                        <select id="state" name="user_state">
+                        <select id="state" name="user_state" required>
                             <optgroup label="state">
+                                <option value="" disabled selected hidden>Please select your state</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
                                 <option value="AZ">Arizona</option>
@@ -105,32 +106,33 @@
                         </select><br>
 
                         <label for="zipcode">Zip Code</label><br>
-                        <input type="text" id="zipcode" name="user_zipcode"><br>
+                        <input type="text" id="zipcode" name="user_zipcode" placeholder="Required" required><br>
                     </legend>
                 </fieldset>
 
                 <fieldset>
                     <legend class="newsletter">Newsletter</legend>
-                        <label class="letter_type">Select the newsletter you would like to receive</label><br>
+                        <p class="letter_type">Select the newsletter you would like to receive:</p><br>
                             <input type="checkbox" id="html_news" value="html" name="newsletter_type"><label for="html_news" class="light">HTML News</label><br>
                             <input type="checkbox" id="css_news" value="css" name="newsletter_type"><label for="css_news" class="light">CSS News</label><br>
                             <input type="checkbox" id="jvs_news" value="jvs" name="newsletter_type"><label for="jvs_news" class="light">Javascript News</label><br>
 
-                        <label class="letter_format">Newsletter format</label><br>
+                        <p class="letter_format">Newsletter format:</p><br>
                             <input type="radio" id="html" value="html" name="newsletter_format"><label for="html" class="light">HTML</label><br>
                             <input type="radio" id="text" value="text" name="newsletter_format"><label for="text" class="light">Plain Text</label><br>
 
-                        <label for="othertopic" class="text_area">Other topics you'd like to hear about</label>
-                            <textarea id="othertopic" name="user_topic"></textarea><br>
+                        <p class="text_area">Other topics you'd like to hear about</p>
+                            <textarea id="othertopic" name="user_topic" placeholder="Please type your response here"></textarea><br>
                          
                 </fieldset>
 
-                <button type="submit">Sign Up</button>
+                
         </form>
     </div>
 
-    <footer>
-        Copy The Code Review
+    <footer class="end">
+        <button type="submit">Sign Up</button>
+        <p class="copyright">Copyright The Code Review</p>
     </footer>
 
 
