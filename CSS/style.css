@@ -28,8 +28,6 @@ h1,
 .top-info h2 {
     margin-bottom: 0;
     width: 100%;
-}
-.top-info h2 {
     color: #716040;
 }
 /*the form*/
@@ -134,8 +132,18 @@ input[type="radio"]{
 }
 @media (min-width:768px){
     form {
-      margin: 0 150px;
+        margin: auto;
+        width: 500px;
+   }
+    #container {
+        display: flex;
+        justify-content: flex-start;
+        margin:auto;
+        width: 500px;
+        padding: 10px;
+        padding-left: 0px;
     }
+    
     #zipcode {
         width:25%;
         height: 30px;
