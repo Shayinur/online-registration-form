@@ -84,8 +84,11 @@ select {
     width:50%;
     height: 30px;
 }
-input:focus {
-    border: #020826 solid;
+input:focus,
+textarea:focus, 
+#state:focus  {
+    outline: 0;
+    border: #020826 dashed;
 }
 
 .light {
@@ -130,25 +133,50 @@ input[type="radio"]{
     font-style: italic;
     margin: 20px 0 100px 0;
 }
+
+/* media queries*/
 @media (min-width:768px){
     form {
         margin: auto;
         width: 500px;
    }
-    #container {
-        display: flex;
-        justify-content: flex-start;
-        margin:auto;
-        width: 500px;
-        padding: 10px;
-        padding-left: 0px;
-    }
-    
-    #zipcode {
-        width:25%;
-        height: 30px;
-    }
+   .container{
+       display:flex;
+       justify-content: flex-start;
+       flex-direction: column;
+       margin: auto;
+   }
+   .flex-item-1 {
+       display:flex;
+       flex-direction: row;
+       justify-content: flex-start;
+       width: 100%;
+       
+   }
+   .flex-item-1 > label {
+       flex: 1 30px;
+       margin-top: 10px;
+       
+   }
+   .flex-item-1 >input,
+   .flex-item-1 >select {
+       flex: 2 30px;
+   }
+   .zipcode {
+       display: inline-flex;
+       margin-top: 10px;
+   }
+   #zipcode {
+       margin: 0;
+       width: 25%;
+   }
+   .zipcode > label {
+       width: 167.328px;
+   }
     .end {
         margin: 0 162px;
     }
+  
+
+    
 }
