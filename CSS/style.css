@@ -36,14 +36,13 @@ form {
     flex-direction: column;
 }
 legend {
-    font-size: 700;
     font-weight: bold;
 }
 .contact {
     border-top: solid 3px #020826;
     margin: 10px 0;
     width: 100%;
-    padding: 20px 0;
+    padding-top: 10px;
 }
 fieldset {
     border: none;
@@ -90,10 +89,6 @@ textarea:focus,
     outline: 0;
     border: #020826 dashed;
 }
-
-.light {
-    margin: 10px;
-}
 .end {
     display: flex;
     flex-direction: column;
@@ -115,7 +110,7 @@ button {
 
 input[type="checkbox"],
 input[type="radio"]{
-    margin: 10px 0;
+    margin: 10px;
 }
 .newsletter{
     width: 100%;
@@ -176,7 +171,5 @@ input[type="radio"]{
     .end {
         margin: 0 162px;
     }
-  
-
-    
+     
 }
